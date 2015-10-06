@@ -80,7 +80,7 @@ namespace FindDominantColour {
         /// <summary>
         /// Calcultes the Euclidean distance between two colours, <paramref name="c1"/> and <paramref name="c2"/>
         /// </summary>
-        private static double EuclideanDistance(Color c1, Color c2) {
+        public static double EuclideanDistance(Color c1, Color c2) {
             double distance = Math.Pow(c1.R - c2.R, 2) + Math.Pow(c1.G - c2.G, 2) + Math.Pow(c1.B - c2.B, 2);
 
             return Math.Sqrt(distance);
